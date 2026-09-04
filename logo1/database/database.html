@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kas Kelas</title>
+    <link rel="stylesheet" href="database.css">
+</head>
+<body>
+    <header class="page-bar">
+        <h1>Kas kelas</h1>
+        <button type="button" class="back" onclick="out1()">
+            <img src="../../svg/Exit.svg" alt="Kembali">
+            Beranda
+        </button>
+    </header>
+
+    <section class="summary">
+        <article>
+            <p class="label">Saldo kas</p>
+            <p class="value">Rp 1.250.000</p>
+        </article>
+        <article>
+            <p class="label">Kas pramuka</p>
+            <p class="value">Rp 180.000</p>
+        </article>
+        <article>
+            <p class="label">Masuk bulan ini</p>
+            <p class="value masuk">Rp 320.000</p>
+        </article>
+        <article>
+            <p class="label">Keluar bulan ini</p>
+            <p class="value keluar">Rp 95.000</p>
+        </article>
+    </section>
+
+    <section class="panel">
+        <h2>Riwayat transaksi</h2>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tanggal</th>
+                        <th>Keterangan</th>
+                        <th>Jenis</th>
+                        <th>Jumlah</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01 Sep 2026</td>
+                        <td>Kas mingguan (24 orang)</td>
+                        <td class="masuk">Pemasukan</td>
+                        <td class="masuk">+ Rp 240.000</td>
+                    </tr>
+                    <tr>
+                        <td>03 Sep 2026</td>
+                        <td>Spidol &amp; penghapus</td>
+                        <td class="keluar">Pengeluaran</td>
+                        <td class="keluar">− Rp 35.000</td>
+                    </tr>
+                    <tr>
+                        <td>05 Sep 2026</td>
+                        <td>Pelunasan tunggakan</td>
+                        <td class="masuk">Pemasukan</td>
+                        <td class="masuk">+ Rp 80.000</td>
+                    </tr>
+                    <tr>
+                        <td>08 Sep 2026</td>
+                        <td>Alat kebersihan</td>
+                        <td class="keluar">Pengeluaran</td>
+                        <td class="keluar">− Rp 60.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="hint">Angka ini contoh. Ganti dengan catatan bendahara yang sebenarnya.</p>
+    </section>
+
+    <script src="database.js"></script>
+</body>
+</html>

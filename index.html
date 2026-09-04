@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keuangan Kelas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="app-header">
+        <div class="brand">
+            <img src="Gambar/Logo_Kelas.jpeg" alt="Logo kelas" class="foto1">
+            <div class="brand-text">
+                <h1>Keuangan Kelas</h1>
+                <p>Pantau kas, tunggakan, dan anggota</p>
+            </div>
+        </div>
+        <div class="chart-box grafik">
+            <canvas id="grafikKeuangan"></canvas>
+        </div>
+        <div class="chart-box grafik1">
+            <canvas id="grafikKeuangan1"></canvas>
+        </div>
+    </header>
+
+    <nav class="main-nav" aria-label="Menu utama">
+        <a class="nav-item" href="logo1/analytics/analytics.html">
+            <img src="svg/file-analytics2.svg" alt="">
+            <span>Data</span>
+        </a>
+        <a class="nav-item" href="logo1/database/database.html">
+            <img src="svg/database1.svg" alt="">
+            <span>Kas</span>
+        </a>
+        <a class="nav-item" href="logo1/assignment/assignment.html">
+            <img src="svg/Assignment.svg" alt="">
+            <span>Tugas</span>
+        </a>
+        <a class="nav-item" href="logo1/rule1/rule1.html">
+            <img src="svg/rule1.svg" alt="">
+            <span>Aturan</span>
+        </a>
+        <a class="nav-item" href="logo1/time/time.html">
+            <img src="svg/Time.svg" alt="">
+            <span>Jadwal</span>
+        </a>
+        <a class="nav-item" href="logo1/activity/activity.html">
+            <img src="svg/Activity.svg" alt="">
+            <span>Aktivitas</span>
+        </a>
+        <a class="nav-item" href="logo1/account/account.html">
+            <img src="svg/Account.svg" alt="">
+            <span>Akun</span>
+        </a>
+    </nav>
+
+    <section class="summary" aria-label="Ringkasan kas">
+        <article class="summary-card">
+            <p class="summary-label">Saldo kas</p>
+            <p class="summary-value">Rp 1.250.000</p>
+            <p class="summary-hint">Kas + kas pramuka</p>
+        </article>
+        <article class="summary-card tunggakan">
+            <p class="summary-label">Tunggakan</p>
+            <p class="summary-value">9 orang</p>
+            <p class="summary-hint">Perkiraan Rp 90.000</p>
+        </article>
+        <article class="summary-card">
+            <p class="summary-label">Pemasukan bulan ini</p>
+            <p class="summary-value">Rp 320.000</p>
+            <p class="summary-hint">Jan–Mei di grafik atas</p>
+        </article>
+        <article class="summary-card legend-card">
+            <p class="summary-label">Status nama</p>
+            <p class="chip-legend"><span class="dot lunas"></span> Lunas</p>
+            <p class="chip-legend"><span class="dot nunggak"></span> Nunggak</p>
+        </article>
+    </section>
+
+    <section class="info-panel">
+        <div class="info-head">
+            <h2>Informasi</h2>
+            <label class="search-wrap">
+                <span class="sr-only">Cari nama</span>
+                <input type="search" id="cariSiswa" placeholder="Cari nama..." autocomplete="off">
+            </label>
+        </div>
+        <div class="siswa-grid" id="siswaGrid">
+            <a class="siswa-chip lunas" href="Daftar/Aglis/Aglis.html">Aglis</a>
+            <a class="siswa-chip nunggak" href="Daftar/Dafa/Dafa.html">Dafa</a>
+            <a class="siswa-chip nunggak" href="Daftar/Iqbal/Iqbal.html">Iqbal</a>
+            <a class="siswa-chip lunas" href="Daftar/Ayu/Ayu.html">Ayu</a>
+            <a class="siswa-chip lunas" href="Daftar/Bayu/Bayu.html">Bayu</a>
+            <a class="siswa-chip lunas" href="Daftar/Berlian/Berlian.html">Berlian</a>
+            <a class="siswa-chip lunas" href="Daftar/Erlangga/Erlangga.html">Erlangga</a>
+            <a class="siswa-chip nunggak" href="Daftar/Faiq/Faiq.html">Faiq</a>
+            <a class="siswa-chip lunas" href="Daftar/Fajar/Fajar.html">Fajar</a>
+            <a class="siswa-chip nunggak" href="Daftar/Farid/Farid.html">Farid</a>
+            <a class="siswa-chip lunas" href="Daftar/Azza/Azza.html">Azza</a>
+            <a class="siswa-chip lunas" href="Daftar/Jelita/Jelita.html">Jelita</a>
+            <a class="siswa-chip lunas" href="Daftar/Febriansyah/Febriansyah.html">Febriansyah</a>
+            <a class="siswa-chip lunas" href="Daftar/Burhan/Burhan.html">Burhan</a>
+            <a class="siswa-chip nunggak" href="Daftar/Fahmi/Fahmi.html">Fahmi</a>
+            <a class="siswa-chip lunas" href="Daftar/Khafadil/Khafadil.html">Khafadil</a>
+            <a class="siswa-chip lunas" href="Daftar/Nauval/Nauval.html">Nauval</a>
+            <a class="siswa-chip nunggak" href="Daftar/Choiri/Choiri.html">Choiri</a>
+            <a class="siswa-chip lunas" href="Daftar/Myiesha/Myiesha.html">Myiesha</a>
+            <a class="siswa-chip lunas" href="Daftar/Naira/Naira.html">Naira</a>
+            <a class="siswa-chip nunggak" href="Daftar/Faruq/Faruq.html">Faruq</a>
+            <a class="siswa-chip lunas" href="Daftar/Naura/Naura.html">Naura</a>
+            <a class="siswa-chip nunggak" href="Daftar/Nayla/Nayla.html">Nayla</a>
+            <a class="siswa-chip lunas" href="Daftar/Nazfar/Nazfar.html">Nazfar</a>
+            <a class="siswa-chip lunas" href="Daftar/Rahma/Rahma.html">Rahma</a>
+            <a class="siswa-chip lunas" href="Daftar/Salsa/Salsa.html">Salsa</a>
+            <a class="siswa-chip lunas" href="Daftar/Shevana/Shevana.html">Shevana</a>
+            <a class="siswa-chip lunas" href="Daftar/Shyfa/Shyfa.html">Shyfa</a>
+            <a class="siswa-chip nunggak" href="Daftar/Sony/Sony.html">Sony</a>
+            <a class="siswa-chip lunas" href="Daftar/Tsania/Tsania.html">Tsania</a>
+            <a class="siswa-chip lunas" href="Daftar/Yasmin/Yasmin.html">Yasmin</a>
+            <a class="siswa-chip lunas" href="Daftar/Yunita/Yunita.html">Yunita</a>
+        </div>
+        <p class="empty-search" id="emptySearch" hidden>Nama tidak ditemukan.</p>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
