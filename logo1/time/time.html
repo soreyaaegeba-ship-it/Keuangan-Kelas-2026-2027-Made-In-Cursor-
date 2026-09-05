@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal</title>
+    <link rel="stylesheet" href="time.css">
+</head>
+<body>
+    <header class="page-bar">
+        <h1>Jadwal</h1>
+        <button type="button" class="back" onclick="out1()">
+            <img src="../../svg/Exit.svg" alt="Kembali">
+            Beranda
+        </button>
+    </header>
+
+    <nav class="tabs" aria-label="Jenis jadwal">
+        <button type="button" class="tab is-on" data-tab="pelajaran">Pelajaran</button>
+        <button type="button" class="tab" data-tab="piket">Piket kelas</button>
+    </nav>
+
+    <section id="panel-pelajaran" class="panel">
+        <div class="pelajaran-head">
+            <div>
+                <h2 id="judulPelajaran">Jadwal pelajaran</h2>
+                <p id="metaPelajaran" class="meta"></p>
+            </div>
+            <label class="kelas-pick">
+                Kelas
+                <select id="pilihKelas"></select>
+            </label>
+        </div>
+        <div id="tabelPelajaran"></div>
+        <p class="hint">
+            Sumber:
+            <a href="../../Jadwal_Pelajaran_SMPN2_Sooko_2026-2027%20(3).xlsx">
+                Jadwal_Pelajaran_SMPN2_Sooko_2026-2027.xlsx
+            </a>
+            — pilih kelas yang sesuai. Mapel mengikuti kode guru di file Excel.
+        </p>
+    </section>
+
+    <section id="panel-piket" class="panel" hidden>
+        <h2>Jadwal piket kelas</h2>
+        <div class="days">
+            <article>
+                <h3>Senin</h3>
+                <p>Dafa, Iqbal, Ayu, Bayu</p>
+            </article>
+            <article>
+                <h3>Selasa</h3>
+                <p>Berlian, Erlangga, Faiq, Fajar</p>
+            </article>
+            <article>
+                <h3>Rabu</h3>
+                <p>Aglis, Farid, Azza, Jelita</p>
+            </article>
+            <article>
+                <h3>Kamis</h3>
+                <p>Febriansyah, Burhan, Fahmi, Khafadil</p>
+            </article>
+            <article>
+                <h3>Jumat</h3>
+                <p>Nauval, Choiri, Myiesha, Naira</p>
+            </article>
+            <article>
+                <h3>Sabtu</h3>
+                <p>Faruq, Naura, Nayla, Nazfar, Rahma</p>
+            </article>
+            <article class="note">
+                <h3>Catatan</h3>
+                <p>Salsa, Shevana, Shyfa, Sony, Tsania, Yasmin, Yunita bergilir membantu jika ada yang absen.</p>
+            </article>
+        </div>
+    </section>
+
+    <script src="jadwal-pelajaran.js"></script>
+    <script src="time.js"></script>
+</body>
+</html>
