@@ -4,10 +4,10 @@ if (ctx) {
     const chart = new Chart(ctx, {
         type: "line",
         data: {
-            labels: ["Jan", "Feb", "Mar", "Apr", "Mei"],
+            labels: ["M6", "M7", "M8", "M9", "M10"],
             datasets: [{
                 label: "Pemasukan",
-                data: [12, 10, 17, 13, 9]
+                data: [64000, 83000, 168000, 42000, 0]
             }]
         },
         options: {
@@ -17,10 +17,10 @@ if (ctx) {
                     onClick: function () {
                         if (chart.data.datasets[0].label === "Pemasukan") {
                             chart.data.datasets[0].label = "Pengeluaran";
-                            chart.data.datasets[0].data = [8, 6, 10, 7, 5];
+                            chart.data.datasets[0].data = [92500, 37000, 235000, 7, 5];
                         } else {
                             chart.data.datasets[0].label = "Pemasukan";
-                            chart.data.datasets[0].data = [12, 10, 17, 13, 9];
+                            chart.data.datasets[0].data = [64000, 83000, 168000, 42000, 9];
                         }
                         chart.update();
                     }
@@ -36,10 +36,10 @@ if (ctx1) {
     const chart1 = new Chart(ctx1, {
         type: "line",
         data: {
-            labels: ["M1", "M2", "M3", "M4", "M5"],
+            labels: ["M6", "M7", "M8", "M9", "M10"],
             datasets: [{
                 label: "Kas",
-                data: [12, 10, 17, 13, 9]
+                data: [353500, 399500, 332500, 342500, 342500]
             }]
         },
         options: {
@@ -49,10 +49,10 @@ if (ctx1) {
                     onClick: function () {
                         if (chart1.data.datasets[0].label === "Kas") {
                             chart1.data.datasets[0].label = "Kas Pramuka";
-                            chart1.data.datasets[0].data = [8, 6, 10, 7, 5];
+                            chart1.data.datasets[0].data = [160000, 160000, 160000, 160000, 160000];
                         } else {
                             chart1.data.datasets[0].label = "Kas";
-                            chart1.data.datasets[0].data = [12, 10, 17, 13, 9];
+                            chart1.data.datasets[0].data = [353500, 399500, 332500, 342500, 342500];
                         }
                         chart1.update();
                     }
