@@ -40,7 +40,7 @@ const chart1 = new Chart(ctx1, {
         labels: ["M4", "M5", "M6", "M7", "M8"],
         datasets: [{
             label: "Kas",
-            data: [5000, 0, 0, 0, 0],
+            data: [12000, 0, 0, 0, 12000],
         }]
     },
 
