@@ -11,7 +11,7 @@ const chart = new Chart(ctx, {
     type: "line",
 
     data: {
-        labels: ["M7", "M8", "M9", "M10", "M11"],
+        labels: ["M10", "M11", "M12", "M13", "M14"],
 
         datasets: [{
             label: "Kas(Kekurangan)",
@@ -29,7 +29,7 @@ const chart1 = new Chart(ctx1, {
     type: "line",
 
     data: {
-        labels: ["M7", "M8", "M9", "M10", "M11"],
+        labels: ["M10", "M11", "M12", "M13", "M14"],
 
         datasets: [{
             label: "Kas",
